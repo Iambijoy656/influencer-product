@@ -1,0 +1,233 @@
+body {
+    background-color: #AAAAAA;
+    ;
+}
+
+
+/* header */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 0 10px;
+
+}
+
+nav a:hover {
+    background-color: lightcyan;
+}
+
+
+
+
+
+.camera {
+    position: relative;
+    z-index: 0;
+}
+
+.camera-img {
+    position: absolute;
+    z-index: 1;
+}
+
+.uppar-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 150px;
+
+}
+
+.uppar-display p {
+    margin-bottom: 20px;
+}
+
+.uppar-display a {
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 5px 10px;
+    border-radius: 20px;
+
+
+}
+
+.right-side {
+    margin-left: 28%;
+    margin-top: -10%;
+}
+
+
+/* e-commerce */
+hr {
+    border: 1px solid #D1D1D1;
+}
+
+.e-commerce-sites {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 100px;
+
+}
+
+.e-commerce {
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.e-commerce img {
+    width: 65px;
+    margin-right: 50px;
+    padding: 10px;
+    height: 40px;
+
+}
+
+/* Popular collections */
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+
+}
+
+.collection {
+    width: 80%;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+}
+
+.item img {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 20px 0px 25px;
+}
+
+.item-details {
+    margin-left: 25px;
+}
+
+
+
+.fa-star {
+    font size: 12px;
+}
+
+.fa-star.filled {
+
+    color: #FFC014;
+}
+
+.fa-star.empty {
+
+    color: #AEAEAE;
+}
+
+
+/* Featured */
+
+.last-part {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 60px;
+
+}
+
+.image img {
+    width: 400px
+}
+
+.image {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.info {
+    width: 50%;
+    margin-top: 40px;
+
+}
+
+.info p {
+    margin-bottom: 50px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+    font: size 30px;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+.footer-head {
+    color: white;
+
+
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+
+    }
+
+    header nav a {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px
+    }
+
+    .right-side {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+    }
+
+
+
+
+}
